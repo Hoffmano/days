@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Days.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clipToOutline="true"
+    android:theme="@style/Theme.Days.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dias sem álcool: "
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/alcoholTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:text="@tools:sample/lorem" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/daysVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dias sem vídeo: "
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/videoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:text="@tools:sample/lorem" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
